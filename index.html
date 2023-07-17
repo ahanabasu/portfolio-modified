@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reponsive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/woman.png">
+    <script src="https://kit.fontawesome.com/759f8d298d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- ---------header-section---------- -->
+    <button class="go-top-btn">
+        <img src="images\home.png" alt="arrow up">
+    </button>
+    <div id="header">
+        <div class="blur">
+            <!-- <div class="top"><i class="fa-solid fa-house"></i></div> -->
+
+            <div class="container">
+
+                <nav>
+                    <div class="logo"><span class="name-init">a</span>hana.</div>
+                    <!-- <img src="images/logo.png" class="logo" alt="logo"> -->
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <!-- download the attached file -->
+                        <li><a href="images/Ahana-Basu-CV.pdf" download>Download CV</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                
+                <div class="header-text">
+                    
+                    <!-- <p>UI/UX Designer</p> -->
+                    <h2>Hi, I'm</h2><h1><span>Ahana Basu</span></h1>from Kolkata, India<br><br>
+                    <!-- <h1 class="hello">Hi, I am </h1> -->
+                    <div class="about typewrite" data-period="2000" data-type='[ "Designer.", "Developer.", "Programmer.", "Dancer."]'>
+                        <span class="wrap"></span>
+                    </div>
+                    <div class="moreabout">I am a CS undergrad and web design enthusiast.</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- --------about section--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- add image -->
+                <div class="about-col-1">
+                    <img src="images/user-ahana.png" alt="about-image">
+                </div>
+
+                <!-- add text -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A responsible and enthusiastic CS undergrad, eager to fully utilize my skills, and gain experience along with knowledge. I look forward to learning new technologies and try to keep pace with the growing tech-verse and make a significant contribution to any organizational progress.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('tech-skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('non-tech-skills')">Non-technical Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- tech skills -->
+                    <div class="tab-contents active-tab" id="tech-skills">
+                        <ul>
+                            <li><span>OOPs using Java</span><br>clear knowledge of object oriented programming using Java & limited knowledge about latest Core Java</li>
+                            <li><span>Python</span><br>core concepts & problem solving</li>
+                            <li><span>C language</span><br>data stucture & algorithm using C & problem solving</li>
+                            <li><span>SQL</span><br>core concepts of DBMS & SQL commands to access and manupulate databases</li>
+                            <li><span>Web Development & Web Design</span><br>HTML, CSS & limited Javascript knowledge to deploy hands on websites</li>
+                        </ul>
+                        <br><br><br>
+                        
+                        <div class="hr-link"><a href="https://www.hackerrank.com/basuhana01" target="_blank"><i class="fa-brands fa-hackerrank"></i></a><span>check progress in languages</span></div>
+                    </div>
+                    
+                    <!-- non tech skills -->
+                    <div class="tab-contents" id="non-tech-skills">
+                        <ul>
+                            <li><span>Communication</span><br>effectively and comfortatably communicate in English, Bengali & Hindi</li>
+                            <li><span>Leadership & Cooperation</span><br>work as a team or successfully lead a team towards the goal</li>
+                            <li><span>Time Management</span><br>dead against procrastination and finishes up work by deadline</li>
+                            <li><span>Creative & Artistic</span><br>love to listen to music & sketch portraits, trained Kathak dancer & I sculpt chalks into miniatures sometimes</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - current</span><br>secured 9.698 GPA (upto 5th semester) in B. Tech CSE from B. P. Poddar Institute of Management and Technology, MAKAUT</li>
+                            <li><span>2020</span><br>93.4% in 12th (CBSE) from Aditya Academy Senior Secondary, Dumdum</li>
+                            <li><span>2018</span><br>95.6% in 10th (CBSE) from Aditya Academy Senior Secondary, Dumdum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------services section------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+               
+                <!-- service 1 -->
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>I value simple content structure, clean design patterns, and thoughtful interactions.<span id="dots">..</span><span id="more"><br>Things I enjoy designing - UI, Web, Logos <br><br><em>Design tools: </em><br><br>Qt Designer<br>Figma <br>Font Awsome <br>Pen & Paper</span></p><br>
+                    <button onclick="readMore()" id="readmore-btn" class="btn-read">Read more</button>
+                    <!-- link for learn more -->
+                </div>
+
+                <!-- service 2 -->
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Programmer & Developer</h2>
+                    <p>I like to code things from scratch and solve untouched problems, and enjoy bringing ideas to life in the browser.<span id="dots1">..</span><span id="more1"><br>Languages I speak - C, Java, Python, HTML, CSS, SQL <br><br><em>Dev tools: </em><br><br>VS Code<br>Jupyter <br>Terminal <br>Github</span></p><br>
+                    <button onclick="readMore1()" id="readmore-btn1" class="btn-read">Read more</button>
+                    <!-- link for learn more -->
+                </div>
+
+                <!-- service 3 -->
+                <!-- <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots2">...</span><span id="more2">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p><br>
+                    <button onclick="readMore2()" id="readmore-btn2" class="btn-read">Read more</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/lib5.jpg" alt="work1">
+                    <div class="layer">
+                        <h3>Advanced Digital Library</h3>
+                        <p>
+                            <h4><i>A GUI-based Library Management System</i></h4> 
+                            Performs CRUD operations on student and book details. Admin can login to issue book to registered students and return books. Validity and Authentication of admins, students and books are done. <br>
+                            Target Users: Students, Colleges, Schools etc. <br><br>
+                            Technologies used: Java Swing (Front-End), MySQL & JDBC (Back-End)
+                        </p>
+                        <a href="https://github.com/ahanabasu/library-management-system" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/country-guide2.jpg" alt="work2">
+                    <div class="layer">
+                        <h3>Your Country Guide</h3>
+                        <p><h4><i>A Responsive Countries’ Information database website</i></h4>
+                            Used JavaScript to implement REST Countries API to collect information of any valid country like capital, continent, population, currency, common language(s) which is searchable anytime. <br>
+                            Target users: Students, Researchers, Tourists. <br><br>
+                            Technologies Used: HTML, CSS, JavaScript, REST countries API</p>
+                        <a href="https://ahanabasu.github.io/Your-Country-Guide/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a> 
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/work-3.png" alt="work3">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you with talented people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+    <!-- ------------contact section------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- left column: contact info -->
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>   <a class="mailhere" href="mailto:basuhana01@email.com" target="_blank">basuhana01@gmail.com</a>
+                    </p>
+                    <p id="phone"><i class="fa-solid fa-phone"></i>+91-7044746633</p>
+                    <p id="loc"><i class="fa-sharp fa-solid fa-location-dot"></i>Kolkata, West Bengal, India</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ahana-basu-18463b214/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/_ahanaB" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/lettersovernotifications/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ahana.basu.184" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/ahanabas" target="_blank"><i class="fa-brands fa-github-alt"></i></a>
+                    </div>
+                    
+                </div>
+                <!-- right column: contact form -->
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name *" required>
+                        <input type="email" name="Email" placeholder="Your Email *" required>
+                        <input type="phone" name="Phone Number" placeholder="Your Number">
+                        <textarea name="Message" cols="40" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                        <span id="msg"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ahana, May 2023</p>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- javascript -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    //defining function opentab()
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link"); //will remove the underline feature from all the active tablinks
+        }
+
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab"); //will remove all the tab contents except the active tab
+        }
+
+        //display the underline of active tab
+        event.currentTarget.classList.add("active-link");
+
+        //display content of active tab
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #212A3E}";
+        document.body.appendChild(css);
+    };
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbywaW6HBVrNnup86AKw0ceJU0EKACBCk7yrAVtt8tpj0pw7vzlemLtNX-kurYXfczIL/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script>
+    const goTopBtn = document.querySelector('.go-top-btn');
+
+window.addEventListener('scroll', checkHeight)
+
+function checkHeight(){
+  if(window.scrollY > 200) {
+    goTopBtn.style.display = "flex"
+  } else {
+    goTopBtn.style.display = "none"
+  }
+}
+
+goTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+})
+</script>
+
+<script>
+    function readMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("readmore-btn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+        } 
+        else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+        }
+    }
+
+    function readMore1() {
+        var dots = document.getElementById("dots1");
+        var moreText = document.getElementById("more1");
+        var btnText = document.getElementById("readmore-btn1");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+        } 
+        else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+        }
+    }
+
+    function readMore2() {
+        var dots = document.getElementById("dots2");
+        var moreText = document.getElementById("more2");
+        var btnText = document.getElementById("readmore-btn2");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+        } 
+        else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
+</body>
+</html>
